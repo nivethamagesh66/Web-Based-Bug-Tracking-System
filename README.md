@@ -97,14 +97,9 @@ jwt.secret=your_jwt_secret_key
 
 ```bash
 cd Backend
-./mvnw spring-boot:run
+mvn clean install
+mvn spring-boot:run
 ```
-
-Or directly run the main class in IntelliJ:
-```
-com.example.bughound.BughoundApplication
-```
-
 ---
 
 ### 4. Database Setup
