@@ -1,0 +1,151 @@
+.manage-users-container {
+  width: 95%;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.manage-users-container h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.user-table {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.user-table h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+thead {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  min-width: 80px;
+}
+
+.edit-button {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+}
+
+.edit-button:hover {
+  background: linear-gradient(to right, #0056b3, #003f7f);
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background: linear-gradient(to right, #dc3545, #b02a37);
+  color: white;
+}
+
+.delete-button:hover {
+  background: linear-gradient(to right, #b02a37, #7f1f29);
+  transform: scale(1.05);
+}
+.fullscreen-bugs-container {
+  width: 95%;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.fullscreen-bugs-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fullscreen-table-wrapper {
+  overflow-x: auto;
+  max-height: 75vh;
+}
+
+.fullscreen-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.fullscreen-table th,
+.fullscreen-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.fullscreen-table th {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.fullscreen-table tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

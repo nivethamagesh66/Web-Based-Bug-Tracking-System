@@ -1,0 +1,54 @@
+.manage-functional-areas-container {
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.manage-functional-areas-container h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.scrollable-table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.functional-areas-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.functional-areas-table th,
+.functional-areas-table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.functional-areas-table th {
+  background: rgba(0, 0, 0, 0.9);
+  position: sticky;
+  top: 0;
+}
+
+.delete-btn {
+  background: linear-gradient(to right, #dc3545, #b02a37);
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(to right, #b02a37, #7f1f29);
+  transform: scale(1.05);
+}

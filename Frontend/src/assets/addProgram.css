@@ -1,0 +1,108 @@
+.program-container {
+  max-width: 95%;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.program-content {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.program-form,
+.program-list {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 450px;
+}
+
+.program-form h3,
+.program-list h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 6px;
+  width: 100%;
+}
+
+.program-form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program-form input {
+  width: 90%;
+  max-width: 400px;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-align: center;
+}
+
+.program-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.program-form button {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 90%;
+  max-width: 400px;
+  transition: all 0.3s;
+}
+
+.program-form button:hover {
+  background: linear-gradient(to right, #0056b3, #003f7f);
+  transform: scale(1.05);
+}
+
+.program-list ul {
+  list-style: none;
+  padding: 0;
+  max-height: 250px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.program-list ul li {
+  font-size: 16px;
+  margin: 8px 0;
+  color: white;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.program-list ul li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
