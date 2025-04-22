@@ -1,3 +1,4 @@
+
 # Web-Based Bug Tracking System (Bug Hound)
 
 This is a full-stack web application for tracking software bugs, built with a **React frontend** and a **Spring Boot backend**, using **MySQL** as the database.
@@ -52,6 +53,8 @@ This is a full-stack web application for tracking software bugs, built with a **
 | Developer | Assigned to fix bugs                | Edit assigned bugs only          |
 | Tester   | Reports new bugs                    | View and report bugs             |
 
+---
+
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the Repository
@@ -60,7 +63,9 @@ This is a full-stack web application for tracking software bugs, built with a **
 git clone https://github.com/nivethamagesh66/Web-Based-Bug-Tracking-System.git
 ```
 
-### 2. Frontend Setup
+---
+
+### 2. Frontend Setup (React)
 
 ```bash
 cd Frontend
@@ -68,14 +73,48 @@ npm install
 npm start
 ```
 
-### 3. Backend Setup
+---
 
-- Open `/Backend` in IntelliJ or your preferred IDE
-- Create a `application.properties` file with your MySQL config
-- Run the application
+### 3. Backend Setup (Spring Boot)
+
+1. Open `/Backend` in IntelliJ IDEA or your preferred IDE.
+
+2. Create `application.properties` inside `/src/main/resources` with your MySQL configuration:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/bughound
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
+jwt.secret=your_jwt_secret_key
+```
+
+3. Run the application using Maven:
+
+```bash
+cd Backend
+./mvnw spring-boot:run
+```
+
+Or directly run the main class in IntelliJ:
+```
+com.example.bughound.BughoundApplication
+```
+
+---
 
 ### 4. Database Setup
 
-Create a MySQL database and run schema files if provided.
+- Ensure MySQL is running on your system
+- Create a database named `bughound`:
+```sql
+CREATE DATABASE bughound;
+```
 
+- Spring Boot will auto-create tables based on JPA entities
 
+---
